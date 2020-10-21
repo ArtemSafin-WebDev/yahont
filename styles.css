@@ -1,0 +1,271 @@
+.home-slider {
+    padding: 20px;
+}
+
+
+.home-slider__list {
+    display: flex;
+    margin: -10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.home-slider__list-item {
+    width: 33.33%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.home-slider__card {
+    position: relative;
+    z-index: 1;
+    background-color: #a89561;
+    min-height: 670px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    box-sizing: border-box;
+    max-height: 930px;
+    
+    
+
+}
+
+
+.home-slider__card::after {
+    content: '';
+    display: block;
+    padding-bottom: 145%;
+}   
+
+
+.home-slider__card-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home-slider__card:hover {
+    text-decoration: none;
+}
+
+
+.home-slider__card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.home-slider__card:link,
+.home-slider__card:visited {
+    color: white;
+}
+
+
+.home-slider__card-content {
+    margin-bottom: 30px;
+    margin-top: auto;
+    min-height: 256px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    padding-top: 22px;
+    box-sizing: border-box;
+}
+
+
+.home-slider__card-heading {
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 42px;
+    min-height: 88px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+.home-slider__card-text p {
+    margin: 0;
+}
+
+
+.home-slider__card-link {
+    margin-top: auto;
+}
+
+
+.home-slider__card-text {
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    min-height: 55px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 13px;
+}
+
+
+.home-slider__card-link {
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 7px 45px;
+    border: 2px solid white;
+    display: inline-flex;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    transition: all .2s;
+}
+
+
+.home-slider__card:hover .home-slider__card-link {
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .home-slider__card-heading {
+        font-size: 24px;
+        line-height: 1.3;
+        min-height: 65px;
+    }
+
+    .home-slider__card-text {
+        font-size: 18px;
+        line-height: 1.3;
+        min-height: 45px;
+    }
+
+    .home-slider__card-content {
+        min-height: 220px;
+    }
+
+
+    .home-slider__card {
+        min-height: 600px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .home-slider__card-heading {
+        font-size: 20px;
+        min-height: 58px;
+    }
+
+    .home-slider__card-text {
+        font-size: 16px;
+    }
+
+    .home-slider__card-content {
+        min-height: 200px;
+        
+    }
+
+    .home-slider__card {
+        min-height: 540px;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .home-slider {
+        padding: 0;
+    }
+
+    .home-slider__list {
+        margin: 0;
+        flex-direction: column;
+    }
+
+
+    .home-slider__list-item {
+        width: 100%;
+        padding: 0;
+    }
+
+    .home-slider__card-content {
+        min-height: auto;
+        margin-bottom: 0;
+        flex-grow: 1;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .home-slider__card {
+        min-height: auto;
+    }
+
+    .home-slider__card::after { 
+        display: none;
+    }
+
+
+    .home-slider__card-image {
+        object-position: center;
+    }
+
+    .home-slider__card-inner {
+        position: static;
+        flex-grow: 1;
+        min-height: 235px;
+        
+    }
+
+
+    .home-slider__card-heading {
+        font-size: 26px;
+        min-height: 32px;
+        margin-bottom: 10px;
+        min-height: auto;
+    }
+
+    .home-slider__card-heading br {
+        display: none;
+    }
+
+    .home-slider__card-text {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 17px;
+        min-height: auto;
+        
+    }
+
+
+    .home-slider__card-link {
+        font-size: 16px;
+        padding: 6px 45px;
+        border-width: 2px;
+        border-radius: 2px;
+        margin-top: 0;
+        
+    }
+}
